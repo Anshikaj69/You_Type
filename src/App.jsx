@@ -13,8 +13,10 @@ const App = () => {
 
   return (
     <>
-    <div className="flex flex-col justify-center items-center  ">
-      <img src={logo} className="w-[10%] mb-5 "></img>
+    
+      
+      <div className="flex flex-col  ">
+      <img src={logo} className="w-[10%] mb-5 absolute top-[3%] flex justify-center items-center"></img>
       <CountdownTimer timeLeft={timeLeft} />
       <WordsContainer>
         <GeneratedWords key={words} words={words} />
@@ -26,7 +28,7 @@ const App = () => {
         />
       </WordsContainer>
       <RestartButton
-        className="mx-auto mt-5 text-slate-500"
+        className="mx-auto mt-5 text-slate-500  " 
         onRestart={restart}
       />
       <Results
@@ -37,7 +39,7 @@ const App = () => {
         total={totalTyped}
       />
 
-      <footer className="text-slate-300 mt-5 mx-[10%] ">  
+      <footer className="text-slate-300 mt-5 text-center ">  
         By Anshika Jaiswal
       </footer>
       </div>
@@ -47,14 +49,14 @@ const App = () => {
 
 const WordsContainer = ({ children }) => {
   return (
-    <div className="relative text-3xl max-w-xl leading-relaxed break-all mt-3">
+    <div className="relative text-3xl max-w-2xl leading-relaxed break-all mt-3">
       {children}
     </div>
   );
 };
 
 const CountdownTimer = ({ timeLeft }) => {
-  return <h2 className="text-primary-400 font-medium text-start flex flex-row ">Time: {timeLeft}</h2>;
+  return <h2 className="text-yellow-400 font-medium text-start flex flex-row ">Time: {timeLeft}</h2>;
 };
 
 export default App;
