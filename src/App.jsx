@@ -16,6 +16,7 @@ const App = () => {
     
       
       <div className="flex flex-col  ">
+
       <img src={logo} className="w-[10%] mb-5 absolute top-[3%] flex justify-center items-center"></img>
       <CountdownTimer timeLeft={timeLeft} />
       <WordsContainer>
@@ -49,7 +50,7 @@ const App = () => {
 
 const WordsContainer = ({ children }) => {
   return (
-    <div className="relative text-3xl max-w-2xl leading-relaxed break-all mt-3">
+    <div className="relative text-3xl max-w-3xl leading-relaxed break-all mt-3">
       {children}
     </div>
   );
