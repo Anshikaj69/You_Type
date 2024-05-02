@@ -54,7 +54,7 @@ const WordsContainer = ({ children }) => {
 };
 
 const CountdownTimer = ({ timeLeft }) => {
-  return <h2 className="text-primary-400 font-medium text-start flex flex-row items-start justify-start w-[38%]">Time: {timeLeft}</h2>;
+  return <h2 className="text-primary-400 font-medium text-start flex flex-row ">Time: {timeLeft}</h2>;
 };
 
 export default App;
